@@ -1,0 +1,24 @@
+{
+  "name": "node-db-challenge",
+  "version": "1.0.0",
+  "description": "Node DB Challenge",
+  "main": "index.js",
+  "repository": "https://github.com/raaudain/node-db-challenge.git",
+  "author": "Ramon Audain <raudain123@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "server": "nodemon index.js",
+    "db:latest": "knex migrate: latest",
+    "seeds": "knex seed:run"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "knex": "^0.20.4",
+    "knex-cleaner": "^1.3.0",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
